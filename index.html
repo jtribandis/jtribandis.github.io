@@ -4,56 +4,93 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Jason Tribandis — Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="https://unpkg.com/mvp.css"> <!-- clean style -->
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+  <style>
+    header { text-align:center; }
+    .hero {
+      display:flex; gap:24px; align-items:center; justify-content:center; flex-wrap:wrap;
+      margin: 1rem auto 2rem;
+    }
+    .hero img {
+      width:120px; height:120px; object-fit:cover; border-radius:50%;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    }
+    .grid { display:grid; gap:24px; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); }
+    article img.thumb { width:100%; height:180px; object-fit:cover; border-radius:8px; }
+    .muted { opacity:.85; }
+  </style>
 </head>
 <body>
 <header>
   <h1>Jason Tribandis</h1>
-  <p>Data Analyst • Mining & Markets • Dashboards & Modeling</p>
+
+  <!-- Headshot at top -->
+  <div class="hero">
+    <img src="assets/Picture_Of_Jason_Tribandis.png"
+         alt="Professional headshot of Jason Tribandis" loading="lazy" />
+    <p class="muted">Data Analyst • Mining &amp; Markets • Dashboards &amp; Modeling</p>
+  </div>
+
+  <!-- Links: GitHub • LinkedIn (updated) • Resume (PDF in assets) -->
   <p>
-    <a href="https://github.com/jtribandis">GitHub</a> · 
-    <a href="LINK_TO_RESUME_PDF">Resume (PDF)</a> · 
-    <a href="https://www.linkedin.com/in/jasontribandis/">LinkedIn</a>
+    <a href="https://github.com/jtribandis">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/j-tribandis">LinkedIn</a> ·
+    <a href="assets/Tribandis_Jason_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
   </p>
 </header>
 
 <main>
   <section>
     <h2>Projects</h2>
+    <div class="grid">
 
-    <article>
-      <h3>Hashprice Dashboard (React)</h3>
-      <p>Interactive mining profitability dashboard with scenario inputs and live chart.</p>
-      <p>
-        <a href="https://jtribandis.github.io/hashprice-dashboard/">Live Demo</a> ·
-        <a href="https://github.com/jtribandis/hashprice-dashboard">GitHub Repo</a>
-      </p>
-    </article>
+      <article>
+        <h3>Hashprice Dashboard (React)</h3>
+        <p class="muted">Interactive mining profitability dashboard with scenario inputs and a live chart.</p>
+        <p>
+          <a href="https://jtribandis.github.io/hashprice-dashboard/">Live Demo</a> ·
+          <a href="https://github.com/jtribandis/hashprice-dashboard">GitHub Repo</a>
+        </p>
+      </article>
 
-    <article>
-      <h3>Static HTML Project</h3>
-      <p>A simple HTML/CSS/JS demo project.</p>
-      <p>
-        <a href="https://jtribandis.github.io/html-project">Live Demo</a> ·
-        <a href="https://github.com/jtribandis/html-project">GitHub Repo</a>
-      </p>
-    </article>
+      <article>
+        <h3>Static HTML Project</h3>
+        <p class="muted">A simple HTML/CSS/JS demo project.</p>
+        <p>
+          <a href="https://jtribandis.github.io/html-project">Live Demo</a> ·
+          <a href="https://github.com/jtribandis/html-project">GitHub Repo</a>
+        </p>
+      </article>
 
-    <article>
-      <h3>Bitcoin Mining Model (Excel)</h3>
-      <p>Excel workbook for mining economics with power, efficiency, pool fee, and tax assumptions.</p>
-      <p>
-        <a href="https://github.com/jtribandis/btc-mining-model">GitHub Repo</a> ·
-        <a href="https://raw.githubusercontent.com/jtribandis/btc-mining-model/main/BTC_Mining_Model.xlsx">Download Excel</a> ·
-        <a href="https://1drv.ms/x/c/27dde08403af44a6/EUveZ8jRgl9PgIkJvIr-IsEBNEIzFbW6QDQhP5wDM3i0Rw?e=wW2PKj">View Online (Excel Online)</a>
-      </p>
-    </article>
+      <article>
+        <h3>Bitcoin Mining Model (Excel)</h3>
+        <p class="muted">Excel workbook for mining economics with power, efficiency, pool fee, uptime, and tax assumptions.</p>
+        <p>
+          <a href="https://github.com/jtribandis/btc-mining-model">GitHub Repo</a> ·
+          <a href="https://raw.githubusercontent.com/jtribandis/btc-mining-model/main/BTC_Mining_Model.xlsx">Download Excel</a> ·
+          <a href="https://1drv.ms/x/c/27dde08403af44a6/EUveZ8jRgl9PgIkJvIr-IsEBNEIzFbW6QDQhP5wDM3i0Rw?e=wW2PKj">View Online (Excel Online)</a>
+        </p>
+      </article>
+
+      <!-- Digital collage card at the bottom -->
+      <article>
+        <h3>Digital Art — “Modern-Day Wizard”</h3>
+        <img class="thumb" src="assets/JasonTribandisCollage.png"
+             alt="Digital collage artwork by Jason Tribandis" loading="lazy" />
+        <p class="muted">
+          I made this digital collage using photos throughout my college experience in a digital art class.
+          The piece represents the sweat shirted computer siloed in their own fantastical visons as the modern-day
+          wizard, sparking society shifting fires that reverberate into the physical world.
+        </p>
+        <!-- Optional: add a repo later -->
+        <!-- <p><a href="https://github.com/jtribandis/digital-art">GitHub Repo</a></p> -->
+      </article>
+
+    </div>
   </section>
 </main>
 
-<footer>
-  <small>© Jason Tribandis</small>
-</footer>
+<footer><small>© Jason Tribandis</small></footer>
 </body>
 </html>
 
