@@ -19,10 +19,6 @@
 
     article img.thumb { width:100%; height:180px; object-fit:cover; border-radius:8px; }
     .muted { opacity:.85; }
-
-    /* Make a card span the full grid width (for the art) */
-    .full-bleed { grid-column: 1 / -1; text-align:center; }
-    .full-bleed img { width:67%; height:auto; border-radius:8px; }
   </style>
 </head>
 <body>
@@ -73,18 +69,14 @@
         </p>
       </article>
 
-      <!-- Bitcoin Mining Model (Excel) with local download + preview image -->
+      <!-- Bitcoin Mining Model (Excel) -->
       <article>
         <h3>Bitcoin Mining Model (Excel)</h3>
-
-        <!-- Excel dashboard preview image -->
         <img class="thumb" src="assets/Mining%20Excel%20Dash.jpg"
              alt="Excel mining model dashboard preview" />
-
         <p class="muted">Excel workbook for mining economics with power, efficiency, pool fee, uptime and tax assumptions.</p>
         <p>
           <a href="https://github.com/jtribandis/BTC-Mining-Model">GitHub Repo</a> ·
-          <!-- Direct raw GitHub link to Excel file -->
           <a href="https://github.com/jtribandis/BTC-Mining-Model/raw/main/BTC_Mining_Model%20(version%201).xlsx" download>
             Download Excel
           </a> ·
@@ -94,15 +86,18 @@
         </p>
       </article>
 
-      <!-- Digital Art collage with resized image -->
-      <article class="full-bleed">
-        <h3>Digital Art — “Modern-Day Wizard”</h3>
-        <img src="assets/JasonTribandisCollage.png"
+      <!-- Digital Art collage same size as other images + download link -->
+      <article>
+        <h3>Digital Art — Adobe Photoshop</h3>
+        <img class="thumb" src="assets/JasonTribandisCollage.png"
              alt="Digital collage artwork by Jason Tribandis" loading="lazy" />
         <p class="muted">
           I made this digital collage using photos throughout my college experience in a digital art class.
           The piece represents the sweatshirted nerd, siloed in their own fantastical visions as the modern-day wizard,
           sparking society-shifting fires that reverberate into the physical world.
+        </p>
+        <p>
+          <a href="assets/JasonTribandisCollage.png" download>Download Artwork</a>
         </p>
       </article>
 
@@ -113,4 +108,5 @@
 <footer><small>© Jason Tribandis</small></footer>
 </body>
 </html>
+
 
